@@ -19,7 +19,6 @@ class Mailer extends Mailable
      *
      * @param MailerEvent $event
      */
-//    public function __construct(string $view, string $subject, $data)
     public function __construct(MailerEvent $event)
     {
         $this->event = $event;

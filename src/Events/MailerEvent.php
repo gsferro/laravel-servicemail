@@ -39,8 +39,8 @@ class MailerEvent
         string $to,
         $data,
         ?\DateTime $timeEvent = null,
-        string $attach = null,
-        string $cc = null
+        ?string $attach = null,
+        ?string $cc = null
     )
     {
         $this->view      = $view;
