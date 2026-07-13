@@ -22,7 +22,6 @@ class ServiceMailServiceProvider extends ServiceProvider
     public function register() {}
     public function boot()
     {
-//        parent::boot();
         // em minusculo
         app()->bind('servicemail', function () {
             return new ServiceMail();
